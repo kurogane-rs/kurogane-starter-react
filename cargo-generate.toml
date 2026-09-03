@@ -19,6 +19,16 @@ type = "string"
 prompt = "Frontend build output directory"
 default = "frontend/dist"
 
+[placeholders.frontend_install]
+type = "string"
+prompt = "Command to install frontend dependencies"
+default = "npm --prefix frontend install"
+
+[placeholders.frontend_run]
+type = "string"
+prompt = "Command to run the frontend dev server"
+default = "npm --prefix frontend run dev"
+
 [hooks]
 pre = ["hooks/pre-hook.rhai"]
 
