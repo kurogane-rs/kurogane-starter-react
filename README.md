@@ -32,16 +32,16 @@ cargo generate kurogane-rs/starter-react --name my-app --define language=typescr
 ## Development
 
 ```sh
-npm install
-npm run dev    # Start Vite dev server (port 5173)
-kurogane dev   # Launch the Kurogane desktop app
+npm --prefix frontend install
+npm --prefix frontend run dev  # Start Vite dev server (port 5173)
+kurogane dev                   # Launch the Kurogane desktop app
 ```
 
-## Building
+## Bundling
 
 ```sh
-npm run build     # Build frontend
-kurogane build    # Build the Rust binary
+npm --prefix frontend run build  # Build the frontend into frontend/dist
+kurogane bundle
 ```
 
 ## TypeScript vs JavaScript
