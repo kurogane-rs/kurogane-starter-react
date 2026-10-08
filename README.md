@@ -18,7 +18,7 @@ Select a language when prompted.
 ## Non-interactive usage
 
 ```sh
-cargo generate kurogane-rs/starter-react --name my-app --define language=typescript
+cargo generate kurogane-rs/kurogane-starter-react --name my-app --define language=typescript
 ```
 
 ## What's included

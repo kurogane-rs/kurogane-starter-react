@@ -1,0 +1,21 @@
+{
+  "name": "{{crate_name}}",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "{% if language == "typescript" %}tsc -b && {% endif %}vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19",
+    "react-dom": "^19"
+  },
+  "devDependencies": {
+{% if language == "typescript" %}    "@types/react": "^19",
+    "@types/react-dom": "^19",
+{% endif %}    "@vitejs/plugin-react": "^4",
+{% if language == "typescript" %}    "typescript": "^5",
+{% endif %}    "vite": "^6"
+  }
+}
